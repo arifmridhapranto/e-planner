@@ -7,6 +7,7 @@ import { Contact } from "./pages/Contact";
 import { Blog } from "./pages/Blog";
 import { Events } from "./pages/Events";
 import { Navigation } from "./components/utilities/Navigation/Navigation";
+import NotFound from "./pages/NotFound";
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Route path='/contact' element={<Contact />} />
         <Route path='/blog' element={<Blog />} />
         <Route path='/events' element={<Events />} />
+        <Route path='/events' element={<NotFound />} />
       </Routes>
     </>
   );
