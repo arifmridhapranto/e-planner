@@ -1,0 +1,9 @@
+
+// Override default variables before the import
+$body-bg: rgba(255, 255, 255, 0.205);
+$primary: green;
+$bg-yoo: coral;
+$danger: yellow;
+$pranto: aqua;
+/* import bootstrap to set changes */
+@import "~bootstrap/scss/bootstrap.scss";
