@@ -1,15 +1,18 @@
 import React from 'react'
-import { Container, Button } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import './HeroCarousal.css';
   // import Swiper styles
 import 'swiper/css';
-  import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Link } from 'react-router-dom';
 
   // Import Swiper styles
   import "swiper/css";
   import "swiper/css/pagination";
   // import required modules
   import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper";
+import Buttons from '../Buttons/Buttons';
+import Tbutton from '../Buttons/Tbutton';
 
 const HeroCarousal = () => {
   const images = [
@@ -45,23 +48,24 @@ const HeroCarousal = () => {
                 backgroundPosition: "center",
                 backgroundSize: "cover",
                 backgroundRepeat: "no-repeat",
+                backgroundColor: "rgba(0, 0, 0, 0.8)",
+                backgroundBlendMode: "soft-light",
               }}>
               <Container
                 style={{ height: "90vh" }}
-                className='d-flex justify-content-center align-items-center flex-column w-50 mx-auto'>
-                <h1 className='text-white'>Lorem ipsum dolor sit amet. </h1>
-                <p className='text-white'>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
-                  omnis tenetur autem quod blanditiis laudantium, illum esse
-                  dignissimos incidunt dolor vitae laboriosam distinctio nisi,
-                  sint a asperiores, odio tempora excepturi.{" "}
+                className='d-flex justify-content-center align-items-center flex-column w-md-50 mx-auto w-100 '>
+                <h1 className='banner-heading'>WE PERSONALIZE YOUR EVENTS</h1>
+                <p className='banner-pera'>
+                  We are the Event Management Specialists
                 </p>
-                <p>
-                  <Button size='lg' variant='primary' className='m-4'>
-                    Primary
-                  </Button>
-                  <Button variant='outline-info'>Info</Button>
-                </p>
+                <div className='btnSet'>
+                  <Link to='/contact'>
+                    <Tbutton text='Book Now' />
+                  </Link>
+                  <Link to='/contact'>
+                    <Buttons text='Contact Us' />
+                  </Link>
+                </div>
               </Container>
             </SwiperSlide>
           );

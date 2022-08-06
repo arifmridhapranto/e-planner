@@ -11,3 +11,27 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.sectionPera{
+  width:85%;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(128, 128, 128);
+  margin-bottom: 1rem;
+  line-height: 26px;
+}
+.sub-heading{
+  width: 85%;
+  font-size: 18px;
+  font-weight: normal;
+  color: #000;
+  margin-bottom: 1rem;
+  line-height: 30px;
+}
+.section-heading{
+font-size: 36px;
+line-height: 40px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 1rem;
+}

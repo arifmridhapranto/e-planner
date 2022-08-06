@@ -1,8 +1,13 @@
-import React from 'react'
+import React from 'react';
+import Contact1 from '../Components/Contact/Contact';
+import Cta from '../Components/Cta/Cta';
 
 const Contact = () => {
   return (
-    <div>Contact</div>
+    <>
+      <Contact1 />
+      <Cta/>
+    </>
   )
 }
 

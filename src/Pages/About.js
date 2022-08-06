@@ -1,8 +1,13 @@
-import React from 'react'
+import React from 'react';
+import About1 from '../Components/About/About';
+import Cta from '../Components/Cta/Cta';
 
 const About = () => {
   return (
-    <div>About</div>
+    <>
+      <About1 />
+      <Cta/>
+    </>
   )
 }
 

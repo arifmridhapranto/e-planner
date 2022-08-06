@@ -4,13 +4,14 @@ import Nav from "react-bootstrap/Nav";
 import { Navbar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import './Navigation.css';
+import logo from '../../Assets/Images/E-Planner.png';
 
 const Navigation = () => {
   return (
     <>
           <Navbar collapseOnSelect expand='lg' style={ {background: 'transparent'}}>
         <Container>
-          <Navbar.Brand>React-Bootstrap</Navbar.Brand>
+          <Navbar.Brand><Link to='/'><img src={logo} alt="" /> </Link></Navbar.Brand>
           <Navbar.Toggle aria-controls='responsive-navbar-nav' />
           <Navbar.Collapse id='responsive-navbar-nav'>
             <Nav className='ms-auto'>

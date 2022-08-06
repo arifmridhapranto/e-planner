@@ -8,6 +8,7 @@ import Events from "./Pages/Events";
 import Blog from "./Pages/Blog";
 import Navigation from "./Components/Navigation/Navigation";
 import NotFound from "./Pages/NotFound";
+import Footer from "./Components/Footer/Footer";
 
 // Put any other imports below so that CSS from your
 // components takes precedence over default styles.
@@ -25,6 +26,7 @@ function App() {
         <Route path='/blog' element={<Blog />} />
         <Route path='*' element={<NotFound />} />
       </Routes>
+      <Footer />
     </>
   );
 }
