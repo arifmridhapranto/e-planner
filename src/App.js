@@ -7,6 +7,7 @@ import Contact from "./Pages/Contact";
 import Events from "./Pages/Events";
 import Blog from "./Pages/Blog";
 import Navigation from "./Components/Navigation/Navigation";
+import NotFound from "./Pages/NotFound";
 
 // Put any other imports below so that CSS from your
 // components takes precedence over default styles.
@@ -22,11 +23,10 @@ function App() {
         <Route path='/contact' element={<Contact />} />
         <Route path='/events' element={<Events />} />
         <Route path='/blog' element={<Blog />} />
+        <Route path='*' element={<NotFound />} />
       </Routes>
     </>
   );
-
-
 }
 
 export default App;

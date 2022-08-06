@@ -57,7 +57,9 @@ const HeroCarousal = () => {
                   sint a asperiores, odio tempora excepturi.{" "}
                 </p>
                 <p>
-                  <Button variant='primary'>Primary</Button>
+                  <Button size='lg' variant='primary' className='m-4'>
+                    Primary
+                  </Button>
                   <Button variant='outline-info'>Info</Button>
                 </p>
               </Container>
